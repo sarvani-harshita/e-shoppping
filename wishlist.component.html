@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row" *ngFor="let wishlistItem of wishlistItems">
+    <div class="image">
+      <img src="{{ wishlistItem.src }}">
+    </div>
+    <div class="itemDetails">
+      <h4>{{ wishlistItem.name }}</h4>
+      <p>{{ wishlistItem.category }}</p>
+      <em>Qty: {{ wishlistItem.quantity }}</em><br>
+      <button class="btn btn-primary delete" type="submit" (click)="deleteItem(wishlistItem.id)" >Remove</button>
+    </div>
+    <hr>
+  </div>
+</div>

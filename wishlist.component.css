@@ -1,0 +1,26 @@
+.container{
+    margin-top: 40px;
+}
+.row{
+    width: 990px;
+    height: 270px;
+    margin-left: 54px;
+    background-color: rgb(219, 213, 213);
+    border: 1px solid red;
+}
+.image{
+    width: 313px;
+    height: 269px;
+}
+.image img{
+    width: 200px;
+    height: 220px;
+    margin: 23px 10px 25px 95px;
+} 
+.itemDetails{
+    height: 216px;
+    margin: 35px 10px 10px 8px;
+}
+.delete{
+    margin-top: 20px;
+}
