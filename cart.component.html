@@ -1,0 +1,23 @@
+<div id="not-found" *ngIf="cartitems.length===0">
+    <div class="not-found">
+        <div class="not-found-404">
+            <img src="../assets/img/cart.png">
+            <h2>Cart is Empty</h2>
+        </div>
+        <a routerLink="/home">Add items to cart</a>
+    </div>
+  </div>
+<div class="container">
+  <div class="row" *ngFor="let cartItem of cartitems">
+    <div class="image">
+      <img src="{{ cartItem.src }}">
+    </div>
+    <div class="itemDetails">
+      <h4>{{ cartItem.name }}</h4>
+      <p>{{ cartItem.category }}</p>
+      <em>Qty: {{ cartItem.quantity }}</em><br>
+      <button class="btn btn-primary delete" type="submit" (click)="deleteItem(cartItem.id)" >Remove</button>
+    </div>
+    <hr>
+  </div>
+</div>
