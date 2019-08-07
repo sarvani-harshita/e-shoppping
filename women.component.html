@@ -1,0 +1,26 @@
+<input class="search" type="text" [(ngModel)]="filtered ">
+<br>
+<h3 class="title"><b>OUTFITS</b></h3>
+<hr>
+<div class="row">
+  <div *ngFor="let product of products  | filter:filtered:'name'; let i=index">
+    <div class="card  ">
+      <img class="card-img-top " src="{{ product.src }}" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">{{ product.name }}</h4>
+        <p class="women">{{ product.category }}</p>
+        <p class="quantity">
+          <a (click)="itemsDeleted(product.id)" href="javascript:void(0)">-</a>
+          <!-- <button class="btn btn-link" type="button" (click)="itemsDeleted">-</button> -->
+          {{ product.quantity }}
+          <!-- <button class="rounded" type="button" (click)="itemsAdded">+</button> -->
+          <a (click)="itemsAdded(product.id)" href="javascript:void(0)">+</a>
+        </p>
+        <button class="btn btn-primary" (click)="addItem(product.id)" [disabled]="product.quantity===0">Add to
+          cart</button>
+        <button class="btn btn-primary" (click)="addItemWishlist(product.id)" [disabled]="product.quantity===0">Add to
+          wishlist</button>
+      </div>
+    </div>
+  </div>
+</div>
