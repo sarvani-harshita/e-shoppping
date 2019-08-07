@@ -1,0 +1,54 @@
+/* .completed{
+    border-top:solid 3px rgb(236, 231, 231);
+    position: relative;
+    display: inline;
+   
+} */
+.title{
+    margin: 2%;
+}
+.row{
+    width:98%;
+    margin: 20px;
+}
+p{
+    text-align: center;
+    color: rgb(236, 231, 231);
+    font-size: 28px;
+    margin-left:20px;
+    width: 730px;
+    margin-top: -20px;
+    z-index: 2;
+}
+.card{
+    height: 460px;
+    width: 280px;
+    margin: 20px;
+    border: 1px solid rgb(4, 41, 71);
+}
+.women{
+    width: 120px;
+    height: 20px;
+    font-size: 18px;
+    margin: -10px 10px 30px -20px;
+    color: rgb(109, 103, 103);
+}
+p.quantity{
+    width: 80px;
+    height: 40px;
+    margin: -10px 10px 30px 0px;
+    background-color: red;
+    color: white;
+}
+.items{
+    width: 235px;
+    margin-left:0px;
+    font-size: 20px;
+    color: rgb(51, 50, 50);
+}
+img{
+    align-items:center;
+    height: 252px;
+    width: 279px;
+    padding: 2px;
+}
