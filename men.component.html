@@ -1,0 +1,46 @@
+
+    <input class="search" type="text" [(ngModel)]="filtered ">
+    <br>
+
+<div class="completed">
+  <h3 class="title"><b>OUTFITS</b></h3>
+  <hr>
+  <div class="container">
+  <div class="row">
+    <div *ngFor="let product of products  | filter:filtered:'name'; let i=index">
+      <div class="card">
+        <img class="card-img-top " src="{{ product.src }}" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">{{ product.name }}</h4>
+          <p class="category">{{ product.category }}</p>
+          <div class="quantity">
+              <!-- <a (click)="itemsDeleted(product.id)" href="javascript:void(0)">-</a> -->
+              <button mat-icon-button class="deleteItem" (click)="itemsDeleted(product.id)">
+                <mat-icon style="color: black;" style="font-size:30px;">remove_circle_outline</mat-icon>
+              </button>
+              <span>{{ product.quantity }}</span>
+              <!-- <a (click)="itemsAdded(product.id)" href="javascript:void(0)">+</a> -->
+              <button mat-icon-button class="addItem" (click)="itemsAdded(product.id)">
+                <mat-icon style="color: black;" style="font-size:39px;">add_circle_outline</mat-icon>
+              </button>
+          </div>
+            <div class="cart">
+                <button mat-icon-button class="cartButton" (click)="addItemCart(product.id)" [disabled]="product.quantity===0">
+                  <mat-icon style="margin-left:8px;">add_shopping_cart</mat-icon>
+                  <span>Add to cart</span>
+                </button>
+            </div>
+            <button mat-icon-button 
+              color="warn" 
+              aria-label="Example icon-button with a heart icon" 
+              class="wishlist"
+              (click)="addItemWishlist(product.id)">
+                <mat-icon style="font-size:37px;margin-right: 13px">favorite</mat-icon>
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <hr>
+</div>
