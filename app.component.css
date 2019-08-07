@@ -1,0 +1,40 @@
+.container{
+    margin: 0px;
+}
+.navbar{
+    height: 60px;
+    background: rgba(215, 170, 255, 0.35);
+    box-shadow:  0 2px 4px 0 rgba(0,0,0,.5);
+}
+.navbar-brand{
+    width: 400px;
+    color: rgb(0, 0, 0);
+}
+ul{
+    margin-left: 400px;
+}
+.nav-item{
+    margin: 20px 15px 15px 15px; 
+    font-weight: bold;
+    font-size: 17px;
+    height: 41px;
+}
+.nav-item .nav-link{
+    color: rgb(49, 47, 47);
+}
+.cart-icon{
+    margin:13px 15px 15px 79px;
+}
+li a img{
+    width:40px;
+    height:40px;
+}
+.wishlist-icon a{
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.wishlist-icon img{
+    height: 37px;
+    width: 42px;
+    padding-bottom: 3px;
+}

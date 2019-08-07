@@ -1,0 +1,34 @@
+<div class="backgrnd">
+  <nav class="navbar navbar-expand-sm">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" routerLink="/"><b>ANGULAR</b><em>STORE</em></a>
+    
+    <!-- Links -->
+    <ul class="navbar-nav text-right">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="men">MEN</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="women">WOMEN</a>
+      </li>
+      <li class="nav-item mr-10">
+        <a class="nav-link" routerLink="kids">KIDS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ABOUT</a>
+      </li>
+      <li class="nav-item cart-icon">
+        <a class="nav-link" routerLink="cart">
+          <mat-icon matBadge="{{counter}}" matBadgeColor="warn" style="font-size:32px;margin-top:4px;">
+            shopping_cart
+          </mat-icon>
+        </a>
+      </li>
+      <li class="nav-item wishlist-icon">
+        <a class="nav-link" routerLink="wishlist"><img src="../assets/img/wishlist.png"></a>
+      </li>
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
+
+</div>
