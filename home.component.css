@@ -1,0 +1,108 @@
+.container{
+    margin-top: -60px;
+    z-index:2;
+}
+.container .row{
+    margin-top: 0px;
+    background-color:white;
+}
+
+.men{
+    background-image: url("src/assets/img/men.jpg");
+    background-color: rgb(71, 69, 69);
+    height: 300px;
+    width: 490px;
+    margin:30px
+}
+.men a .btn{
+    color: white;
+    border: 2px solid white;
+    height: 61px;
+    width: 217px;
+    margin-top:120px;
+    margin-left: 139px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.men a .btn:hover{
+    background-color: #ffffffd7;
+    color: rgb(160, 117, 201);
+}
+.women{
+    background-image: url("src/assets/img/women.jpg");
+    background-color: rgb(71, 69, 69);
+    height: 300px;
+    width: 486px;
+    margin:30px
+}
+.women a .btn{
+    color: white;
+    border: 2px solid white;
+    height: 61px;
+    width: 217px;
+    margin-top:120px;
+    margin-left: 139px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.women a .btn:hover{
+    background-color: #ffffffd7;
+    color: rgb(160, 117, 201);
+}
+.kid{
+    background-image: url("src/assets/img/homekid.jpg");
+    background-color: rgb(71, 69, 69);
+    height: 318px;
+    width: 486px;
+    margin:0px 30px 30px 284px;
+}
+.kid a .btn{
+    color: white;
+    border: 2px solid white;
+    height: 61px;
+    width: 217px;
+    margin-top:120px;
+    margin-left: 139px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.kid a .btn:hover{
+    background-color: #ffffffd7;
+    color: rgb(160, 117, 201);
+}
+.row{
+    width:100%;
+    margin-top:30px;
+}
+p{
+    text-align: center;
+    color: rgb(236, 231, 231);
+    font-size: 28px;
+    margin-left:20px;
+    width: 730px;
+    margin-top: -20px;
+    z-index: 2;
+}
+.category{
+    width: 62px;
+    height: 20px;
+    font-size: 18px;
+    margin: -10px 10px 30px 0px;
+    color: rgb(109, 103, 103);
+}
+p.quantity{
+    width: 80px;
+    height: 40px;
+    margin: -10px 10px 30px 0px;
+    background-color: red;
+    color: white;
+}
+.items{
+    width: 235px;
+    margin-left:0px;
+    font-size: 17px;
+    color: rgb(51, 50, 50);
+}
+button{
+    margin-right: 5px;
+}
